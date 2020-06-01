@@ -1,2 +1,4 @@
-Data
+*.avi
+*.csv
+*.txt
 .ipynb_checkpoints

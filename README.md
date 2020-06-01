@@ -2,7 +2,7 @@
 
 ## Datos del curso 📘
 
-* **Proyecto parcial**
+ **Proyecto parcial**
 * **Curso: Computación Gráfica**
 * **Clase del 2020-1**
 * **Maestría en informática - Mención en ciencias de la computación**
@@ -52,17 +52,22 @@ El proyecto cuentas con las siguientes carpetas:
     <img src='Resultados/out4b.png' alt="Experimento 4b" height="400px" width="200px">
 </p>
 
-- Experimento 5: 
-
-📁 Resultados [Ver] .-
-
-
-
-## Configuración 
+- Experimento 5:([Ver](/Experimentos/Experimento%205%20-%20Mejoras.ipynb)): En esta experiencia se añaden mejoras como la variación de la distancia permitida y el trazo de rectas de separación.
+<p align="center"> 
+    <img src='Resultados/out5a.png' alt="Experimento 4a" height="300px" width="600px">
+</p>
 
 
+📁 Resultados [Ver] .- En esta carpeta se almacenan las imagenes que se obtuvieron como resultado de las pruebas
 
 
+## Configuración 🔧
+
+
+## Pasos para ejecución (Colab, Jupyter Notebook) 📑
+
+
+## Algoritmo💡
 
 
 ## Autor 💻
