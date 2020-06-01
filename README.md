@@ -65,7 +65,9 @@ El proyecto cuentas con las siguientes carpetas:
 ### Jupyter Notebook 
 
 - Clonar el proyecto, usar:
---`git clone https://github.com/fararay/DETECTOR_DISTANCIA_SOCIAL.git`
+```sh
+git clone https://github.com/fararay/DETECTOR_DISTANCIA_SOCIAL.git
+```
 - Descargar los archivos del siguiente ([Enlace](/Experimentos/Experimento%205%20-%20Mejoras.ipynb)).
 - Mover los archivos en la carpeta Data
 - Ejecutar el cuaderno (Programa_Final.ipynb) 
@@ -74,8 +76,11 @@ El proyecto cuentas con las siguientes carpetas:
 
 - Copiar el archivo (Programa_Final_(Colab).ipynb) a Google Drive
 - Descargar los archivos del proyect,usar:
---`!wget link1`
---`!wget link2`
+
+```sh
+!wget link1
+!wget link2
+```
 - Ejecutar el cuaderno 
 
 ## Algoritmo💡
@@ -86,11 +91,13 @@ El proyecto cuentas con las siguientes carpetas:
 
 - **Determinación de la transformación** .- Realizado en el experimento 2. Se trata de corresponder puntos conocidos de un frame del video original con la forma a la que se quiere llegar finalmente. Este proceso genera una matriz de transformación la cual será usada posteriormente. Se aproxima la distancia en unidades reales en la segunda imagen según el código mostrado a continuación:
 
---`#6 lozas de ancho - Aproximamos ancho de 40 cm`
---`#15 Lozas de alto - Aproximamos largo de 40 cm`
---`pix_unit = 1.7 #pixeles por centimetro`
---`width_street = 240*pix_unit`
---`height_street = 600*pix_unit`
+```sh
+#6 lozas de ancho - Aproximamos ancho de 40 cm
+#15 Lozas de alto - Aproximamos largo de 40 cm
+pix_unit = 1.7 #pixeles por centimetro
+width_street = 240*pix_unit
+height_street = 600*pix_unit
+```
 
 <p align="center"> 
     <img src='Resultados/base.png' alt="Base" height="300px" width="600px">
