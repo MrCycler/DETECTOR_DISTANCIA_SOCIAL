@@ -34,20 +34,24 @@ El proyecto cuentas con las siguientes carpetas:
 <p align="center"> 
     <img src='Resultados/out1.png' alt="Experimento 1" height="300px" width="600px">
 </p>
+
 - Experimento 2 ([Ver](/Experimentos/Experimento%202%20-%20Determinación%20de%20la%20tranformación.ipynb)): Determinación de la matriz de transformación de la imagen y muestra de la imagen transformada.
 <p align="center"> 
-    <img src='Resultados/out2.png' alt="Experimento 2" height="600px" width="200px">
+    <img src='Resultados/out2.png' alt="Experimento 2" height="400px" width="200px">
 </p>
+
 - Experimento 3 ([Ver](/Experimentos/Experimento%203%20-%20Gráfica%20de%20puntos%20en%20ojo%20de%20halcon.ipynb)): Se grafican los puntos que representan las cabezas de las personas pero desde una vista denominada ojo de halcon.
 <p align="center"> 
     <img src='Resultados/out3a.png' alt="Experimento 3a" height="300px" width="600px">
-    <img src='Resultados/out3b.png' alt="Experimento 3b" height="600px" width="200px">
+    <img src='Resultados/out3b.png' alt="Experimento 3b" height="400px" width="200px">
 </p>
+
 - Experimento 4 ([Ver](/Experimentos/Experimento%204%20-%20Determinación%20de%20infractores.ipynb)): Determinación de infractores. En este experimento se muestran los infractores de color rojo y los que no en color verde. tanto en los frames del video como en la vista de ojo de hálcon.
 <p align="center"> 
     <img src='Resultados/out4a.png' alt="Experimento 4a" height="300px" width="600px">
-    <img src='Resultados/out4b.png' alt="Experimento 4b" height="600px" width="200px">
+    <img src='Resultados/out4b.png' alt="Experimento 4b" height="400px" width="200px">
 </p>
+
 - Experimento 5: 
 
 📁 Resultados [Ver] .-
