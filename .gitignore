@@ -1,4 +1,5 @@
 *.avi
 *.csv
-*.txt
+walkers.txt
 .ipynb_checkpoints
+__pycache__

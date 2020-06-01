@@ -22,9 +22,9 @@ Finalmente el resultado obtenido es un video compuesto de frames como el mostrad
 
 El proyecto cuentas con las siguientes carpetas:
 
-📁 Archivos Setup ([Ver](/Archivos%20Setup)) .- Contiene los archivos para la configuración inicial del entorno para ejecutar los programas.
+📁 Setup ([Ver](/Archivos%20Setup)) .- Contiene los archivos para la configuración inicial del entorno para ejecutar los programas.
 
-📁 Archivos Data ([Ver](/Data)) .- En esta carpeta se deben almacenar los archivos para la prueba que son tres: 
+📁 Data ([Ver](/Data)) .- En esta carpeta se deben almacenar los archivos para la prueba que son tres: 
 - El video donde se realizará la inspección (video.avi)
 - Dos archivos que tiene la información de los bounding boxes (caminantes.csv y walkers.txt)
 
@@ -54,21 +54,47 @@ El proyecto cuentas con las siguientes carpetas:
 
 - Experimento 5:([Ver](/Experimentos/Experimento%205%20-%20Mejoras.ipynb)): En esta experiencia se añaden mejoras como la variación de la distancia permitida y el trazo de rectas de separación.
 <p align="center"> 
-    <img src='Resultados/out5a.png' alt="Experimento 4a" height="300px" width="600px">
+    <img src='Resultados/out5.png' alt="Experimento 5a" height="300px" width="600px">
 </p>
 
-
-📁 Resultados [Ver] .- En esta carpeta se almacenan las imagenes que se obtuvieron como resultado de las pruebas
-
-
-## Configuración 🔧
+📁 Resultados ([Ver](/Resultados)) .- En esta carpeta se almacenan las imagenes que se obtuvieron como resultado de los experimentos.
 
 
 ## Pasos para ejecución (Colab, Jupyter Notebook) 📑
 
+### Jupyter Notebook 
+
+- Clonar el proyecto, usar:
+`git clone https://github.com/fararay/DETECTOR_DISTANCIA_SOCIAL.git`
+- Descargar los archivos del siguiente ([Enlace](/Experimentos/Experimento%205%20-%20Mejoras.ipynb)).
+- Mover los archivos en la carpeta Data
+- Ejecutar el cuaderno (Programa_Final.ipynb) 
+
+### Colab
+
+- Copiar el archivo (Programa_Final_(Colab).ipynb) a Google Drive
+- Descargar los archivos del proyect,usar:
+`!wget link1`
+`!wget link2`
+- Ejecutar el cuaderno 
 
 ## Algoritmo💡
 
+#### El programa desarrollado sigue los siguientes pasos para poder determinar la vista bird-eye
+
+- **División de los frames y trazado de bounding boxes** .- Se usa la librería opencv para poder dividir el video en frames y en base a la información del archivo de texto correspondiente se trazan los bounding boxes que envuelven a cada una de las personas en cada frame.
+- **Determinación de la transformación** .- Realizado en el experimento 2. Se trata de corresponder puntos conocidos de un frame del video original con la forma a la que se quiere llegar finalmente. Este proceso genera una matriz de transformación la cual será usada posteriormente. Se aproxima la distancia en unidades reales en la segunda imagen según el código mostrado a continuación:
+`#6 lozas de ancho - Aproximamos ancho de 40 cm`
+`#15 Lozas de alto - Aproximamos largo de 40 cm`
+`pix_unit = 1.7 #pixeles por centimetro`
+`width_street = 240*pix_unit`
+`height_street = 600*pix_unit`
+<p align="center"> 
+    <img src='Resultados/base.png' alt="Base" height="300px" width="600px">
+</p>
+- **Determinación de puntos representativos** .- Se usa la información de los puntos correspondientes a bounding boxes para determinar aproximadamente la posición de la cabeza de una persona en el frame original, asi mismo, se utiliza la matriz de transformación para ubicar esos puntos en la imagen resultado (bird-eye).
+- **Determinación de puntos buenos y malos** .- En base a una distancia de restricción dada se determinan que puntos que representan a las personas cumplen con la restricción y cuales no, para ello se usa la posición de los puntos en la imagen bird-eye y se determina la distancia simple euclidiana entre ellos.
+- **Visualización de resultados**.- En base a la información de los puntos buenos y malos, se marcan con color rojo aquellos que no cumplen la restricción de distancia en la imagen resultado. Asi mismo, los que si cumplen son mostrados en color verde. El conjunto de puntos buenos y malos tambien determinan el color de los bounding boxes que corresponden a las personas en la imagen original.
 
 ## Autor 💻
 
