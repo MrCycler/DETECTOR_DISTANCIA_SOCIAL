@@ -54,7 +54,7 @@ El proyecto cuentas con las siguientes carpetas:
 
 - Experimento 5:([Ver](/Experimentos/Experimento%205%20-%20Mejoras.ipynb)): En esta experiencia se añaden mejoras como la variación de la distancia permitida y el trazo de rectas de separación.
 <p align="center"> 
-    <img src='Resultados/out5.png' alt="Experimento 5a" height="300px" width="600px">
+    <img src='Resultados/out5.PNG' alt="Experimento 5a" height="300px" width="600px">
 </p>
 
 📁 Resultados ([Ver](/Resultados)) .- En esta carpeta se almacenan las imagenes que se obtuvieron como resultado de los experimentos.
@@ -95,11 +95,13 @@ git clone https://github.com/fararay/DETECTOR_DISTANCIA_SOCIAL.git
 #6 lozas de ancho - Aproximamos ancho de 40 cm
 #15 Lozas de alto - Aproximamos largo de 40 cm
 pix_unit = 1.7 #pixeles por centimetro
+#Aproximacion de pixeles de la imagen final según la longitud en centimetros de la imagen base
 width_street = 240*pix_unit
 height_street = 600*pix_unit
 ```
 
 <p align="center"> 
+    <p>Imagen base</p>
     <img src='Resultados/base.png' alt="Base" height="300px" width="600px">
 </p>
 
