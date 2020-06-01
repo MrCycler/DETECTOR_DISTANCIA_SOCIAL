@@ -62,25 +62,40 @@ El proyecto cuentas con las siguientes carpetas:
 
 ## Pasos para ejecución (Colab, Jupyter Notebook) 📑
 
-### Jupyter Notebook 
+### Jupyter Notebook 🐍
 
 - Clonar el proyecto, usar:
 ```sh
 git clone https://github.com/fararay/DETECTOR_DISTANCIA_SOCIAL.git
 ```
-- Descargar los archivos del siguiente ([Enlace](/Experimentos/Experimento%205%20-%20Mejoras.ipynb)).
+- Descargar los archivos del siguiente ([Enlace](https://drive.google.com/file/d/1qRoVEXJiATzds95IbnCtJWdbuZ7w7Tzi/view?usp=sharing)).
 - Mover los archivos en la carpeta Data
 - Ejecutar el cuaderno (Programa_Final.ipynb) 
 
-### Colab
+### Colab 🌐
 
 - Copiar el archivo (Programa_Final_(Colab).ipynb) a Google Drive
-- Descargar los archivos del proyect,usar:
+- Descargar los archivos de la librería del proyecto (Ya incluido en el cuarderno):
 
 ```sh
-!wget link1
+!wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1rItvY1_aLiPWfaIsGw-50DVFJecp61YT' -O Setup.zip
+!unzip Setup.zip
+```
+- Instalamos las dependencias del proyecto (Ya incluido en el cuarderno):
+
+```sh
+# Instalamos las dependencias del proyecto
+!pip install -r 'Setup/requirements.txt'
 !wget link2
 ```
+- Descargamos la información del proyecto (Ya incluido en el cuarderno):
+
+```sh
+#Descargamos y descomprimimos la información
+!gdown "https://drive.google.com/uc?export=download&id=1qRoVEXJiATzds95IbnCtJWdbuZ7w7Tzi"
+!unzip Data.zip
+```
+
 - Ejecutar el cuaderno 
 
 ## Algoritmo💡
